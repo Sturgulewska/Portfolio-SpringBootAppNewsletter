@@ -36,19 +36,6 @@ public class EmailController {
     }
 
     @RequestMapping(
-            value = "/sendEmail",
-            method = RequestMethod.GET
-    )
-    public String sendEmail() {
-        try {
-            emailService.sendEmail("jakkacz@yahoo.com", "Próba1", "Tresc");
-        } catch (MessagingException e) {
-            e.printStackTrace();
-        }
-        return "OK";
-    }
-
-    @RequestMapping(
             value = "/sendArticle/{subscriberId}",
             method = RequestMethod.GET
     )
