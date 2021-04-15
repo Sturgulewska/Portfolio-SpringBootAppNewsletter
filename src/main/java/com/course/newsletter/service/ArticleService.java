@@ -45,4 +45,8 @@ public class ArticleService {
 
         return dto;
     }
+
+    public List<ArticleEntity> findByCategory(ArticleCategoryEntity category) {
+        return repository.findByCategory(category);
+    }
 }

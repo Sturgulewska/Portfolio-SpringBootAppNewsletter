@@ -6,8 +6,8 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "subscriber_news_category")
-public class SubscriberNewsCategoryEntity {
+@Table(name = "subscriber_article_category")
+public class SubscriberArticleCategoryEntity {
 
     @Id
     @GeneratedValue
